@@ -19,6 +19,7 @@ def get_weather(message):
     else:
         bot.send_message(message.chat.id, 'Не удалось получить данные о погоде для указанного города.')
 
+
 def get_weather_data(city):
     base_url = 'http://api.openweathermap.org/data/2.5/weather'
     params = {
@@ -39,3 +40,5 @@ def get_weather_data(city):
 
 
 bot.polling(none_stop=True)
+
+# Hi
